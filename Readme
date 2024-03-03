@@ -1,0 +1,52 @@
+Project Introduction:
+
+This full-stack web application, built with React, Node.js, and PostgreSQL, efficiently manages customer data. With a user-friendly interface, it displays 50 dummy records in a paginated table with search and sort options. The "date" and "time" columns enhance timestamp visibility, providing a seamless experience for exploring and managing customer information.
+
+Step 1: Set up the Node.js Server
+
+In the command line:
+
+bash
+Copy code
+cd project-folder
+npm init -y
+Install necessary packages:
+
+Copy code
+npm install express pg cors
+Set up your server (server.js):
+
+Replace the repository server.js file code with your server.js code:
+
+javascript
+Copy code
+const pool = new Pool({
+  user: 'your_username',
+  host: 'localhost',
+  database: 'your_database',
+  password: 'your_password',
+  port: 5432,
+});
+Change those to your PostgreSQL credentials.
+
+Step 2: Set up PostgreSQL Database
+
+Use the table.sql file query to create a table and the insertion.sql file query to insert data into your table.
+
+Step 4: Set up the React App
+
+Create a React app:
+
+bash
+Copy code
+npx create-react-app your-react-folder-name
+cd your-react-folder-name
+Install required packages:
+
+Copy code
+npm install axios
+Step 5: Replace the App.js code with my app.js code.
+
+Step 6: RUNNING
+
+In the Node.js command prompt, change the directory to the server folder and enter the command "node server.js" to run the file. Once you get the message "Connected to port 3001", you are successfully connected to the server. Now, go to the Node.js command prompt, change the directory to your-react-folder-name, and enter the command "npm start" to execute the command.
